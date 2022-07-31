@@ -3,5 +3,13 @@
 version = 3
 
 [[package]]
+name = "core_simd"
+version = "0.1.0"
+source = "git+https://github.com/rust-lang/portable-simd#3e7a2ed7201ea62f567f31516548ed2ebb4de63c"
+
+[[package]]
 name = "ruststuff"
 version = "0.1.0"
+dependencies = [
+ "core_simd",
+]
